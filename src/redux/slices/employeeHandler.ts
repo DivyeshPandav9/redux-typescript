@@ -11,8 +11,7 @@ import {
 import { AppDispatch } from '../store';
 
 
-
-const apiUrl ='http://localhost:8000/employees' ;
+const apiUrl ='http://localhost:8000/employees';
 
 
 export const getAllEmpolyees = () => async (dispatch:AppDispatch) => {

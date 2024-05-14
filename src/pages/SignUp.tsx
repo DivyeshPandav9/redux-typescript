@@ -22,7 +22,7 @@ const SignUp = () => {
   const validateInput = () => {
     const newErrors:Errors = {};
 
-    if (!name || name.length < 3) {
+    if (!name || name.length < 3) { 
       newErrors.name = 'Name must be at least 3 characters long.';
     }
 
@@ -42,13 +42,15 @@ const SignUp = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
+  
   const handleForm:FormEventHandler = (e) => {
     e.preventDefault();
     if (validateInput()) {
       console.log({ name, email, password });
       const signUpData = { name, email, password };
+
       localStorage.setItem('signupData', JSON.stringify(signUpData));
+    
       navigate('/');
     }
   };

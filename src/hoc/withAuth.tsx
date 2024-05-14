@@ -29,20 +29,5 @@ export default withAuth;
 
 
 
-// // import React from 'react';
-// import { Navigate } from 'react-router-dom';
-
-// const withAuth = (WrappedComponent) => {
-//   const PrivateComponent = (props) => {
-//     const auth = localStorage.getItem('token');
-
-//     if (!auth) {
-//       return <Navigate to={'/login'} />;
-//     }
-
-//     return <WrappedComponent {...props} />;
-//   };
-//   return PrivateComponent;
-// };
 
 

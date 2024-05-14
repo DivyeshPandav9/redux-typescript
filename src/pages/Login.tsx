@@ -35,7 +35,7 @@ const Login = () => {
     
     if (signData) {
       if (signData.email === email && signData.password === password) {
-        const token = 'wrgruyhrkjhfb13263236873612';
+        const token = `token-${signData.email}-${Math.random().toString(36)}`;
         localStorage.setItem('token', JSON.stringify(token));
         navigate('/');
         Toast.fire({

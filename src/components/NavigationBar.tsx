@@ -22,7 +22,6 @@ const NavigationBar = () => {
       padding: '1em',
       customClass: 'sweet-alerts',
     });
-
     return result.isConfirmed;
   };
 
