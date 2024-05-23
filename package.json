@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:localdev": "vite --mode localdev",
+    "dev:production": "vite --mode production",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "json": "json-server --watch db.json --port 8000",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "preview:localdev": "vite preview --mode localdev",
+    "preview:dev": "vite preview --mode development"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",

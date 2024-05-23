@@ -49,6 +49,7 @@ const Login = () => {
       setErrors('you need to do signup first');
     }
   };
+console.log(import.meta.env);
 
   return (
     <>
