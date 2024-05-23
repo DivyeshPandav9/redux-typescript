@@ -11,7 +11,8 @@ import {
 import { AppDispatch } from '../store';
 
 
-const apiUrl ='http://localhost:8000/employees';
+
+const apiUrl = import.meta.env.VITE_API_URL
 
 
 export const getAllEmpolyees = () => async (dispatch:AppDispatch) => {

@@ -5,17 +5,14 @@ export interface EmpData {
     department: string;
     job_title: string;
     salary: number | undefined;
-
 }
-
 export interface Todo{
     id:string ;
     name:string;
     job_title:string;
     age:number;
     salary:number;
-    department:string;
-    
+    department:string;   
 }
 export interface Errors{
     [key: string]:string;
